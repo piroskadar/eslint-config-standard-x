@@ -18,8 +18,8 @@ title="devDependency status">
 <img src="https://david-dm.org/Xotic750/eslint-config-standard-x/dev-status.svg"
 alt="devDependency status" height="18"/>
 </a>
-<a href="https://badge.fury.io/js/eslint-config-standard-x" title="npm version">
-<img src="https://badge.fury.io/js/eslint-config-standard-x.svg"
+<a href="https://badge.fury.io/js/%40xotic750%2Feslint-config-standard-x" title="npm version">
+<img src="https://badge.fury.io/js/%40xotic750%2Feslint-config-standard-x.svg"
 alt="npm version" height="18">
 </a>
 
