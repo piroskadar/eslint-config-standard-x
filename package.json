@@ -52,7 +52,6 @@
 	},
 	"peerDependencies": {
 		"eslint": "^3.19.0",
-		"eslint-find-rules": "^1.14.3",
 		"eslint-plugin-compat": "^1.0.2",
 		"eslint-plugin-css-modules": "^2.7.1",
 		"eslint-plugin-eslint-comments": "^1.0.0",
@@ -61,7 +60,7 @@
 		"eslint-plugin-no-use-extend-native": "^0.3.12"
 	},
 	"engines": {
-		"node": "*"
+		"node": ">= 4"
 	},
 	"publishConfig": {
 		"access": "public"
