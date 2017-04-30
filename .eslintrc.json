@@ -21,6 +21,8 @@
 	},
 
   "rules": {
+  	"no-compare-neg-zero": "error",
+  	"nonblock-statement-body-position": "error",
     "indent": ["error", 2],
     "global-require": "warn",
     "max-params": ["error", 3],
@@ -56,7 +58,7 @@
     "css-modules/no-unused-class": "off",
     "css-modules/no-undef-class": "warn"
   },
-  
+
   "globals": {
     "JSON": true,
     "returnExports": false
