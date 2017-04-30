@@ -17,8 +17,8 @@
 		"posttest": "npm run --silent security",
 		"tests-only": "eslint index.js",
 		"security": "nsp check",
-    "precommit": "npm test && npm posttest",
-    "prepush": " npm test && npm posttest"
+    "precommit": "npm run tests-only && npm run security",
+    "prepush": "npm run tests-only && npm run security"
 	},
 	"repository": {
 		"type": "git",
