@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-standard-x",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My shareable eslint config for standard modules.",
   "homepage": "https://github.com/Xotic750/module-bolierplate-x",
   "author": {
@@ -32,9 +32,10 @@
     "eslint-config",
     "standard"
   ],
-  "dependencies": {},
+  "dependencies": {
+  	"@ljharb/eslint-config": "^11.0.0"
+  },
   "devDependencies": {
-    "@ljharb/eslint-config": "^11.0.0",
     "eslint": "^3.19.0",
     "eslint-find-rules": "^1.14.3",
     "eslint-plugin-compat": "^1.0.2",
@@ -48,7 +49,6 @@
     "safe-publish-latest": "^1.1.1"
   },
   "peerDependencies": {
-  	"@ljharb/eslint-config": "^11.0.0",
     "eslint": "^3.19.0",
     "eslint-plugin-compat": "^1.0.2",
     "eslint-plugin-css-modules": "^2.7.1",
