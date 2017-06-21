@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-standard-x",
-  "version": "1.0.3",
+  "version": "1.2.0",
   "description": "My shareable eslint config for standard modules.",
   "homepage": "https://github.com/Xotic750/eslint-config-standard-x",
   "author": {
@@ -12,7 +12,7 @@
   "main": "index.js",
   "scripts": {
     "find-unused": "eslint-find-rules --unused",
-    "prepublish": "! type safe-publish-latest >/dev/null 2>&1 || safe-publish-latest && in-install || (npm test && npm run find-unused)",
+    "prepare": "! type safe-publish-latest >/dev/null 2>&1 || safe-publish-latest && in-install || (npm test && npm run find-unused)",
     "test": "npm run --silent tests-only",
     "posttest": "npm run --silent security",
     "tests-only": "eslint index.js",
@@ -33,27 +33,27 @@
     "standard"
   ],
   "dependencies": {
-  	"@ljharb/eslint-config": "^11.0.0"
+    "@ljharb/eslint-config": "^11.0.0"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
-    "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-compat": "^1.0.2",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-compat": "^1.0.4",
     "eslint-plugin-css-modules": "^2.7.1",
-    "eslint-plugin-eslint-comments": "^1.0.0",
-    "eslint-plugin-jsdoc": "^3.0.2",
+    "eslint-plugin-eslint-comments": "^1.0.2",
+    "eslint-plugin-jsdoc": "^3.1.0",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-no-use-extend-native": "^0.3.12",
-    "husky": "^0.13.3",
+    "husky": "^0.13.4",
     "nsp": "^2.6.3",
     "safe-publish-latest": "^1.1.1"
   },
   "peerDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-plugin-compat": "^1.0.2",
+    "eslint": "^4.0.0",
+    "eslint-plugin-compat": "^1.0.4",
     "eslint-plugin-css-modules": "^2.7.1",
-    "eslint-plugin-eslint-comments": "^1.0.0",
-    "eslint-plugin-jsdoc": "^3.0.2",
+    "eslint-plugin-eslint-comments": "^1.0.2",
+    "eslint-plugin-jsdoc": "^3.1.0",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-no-use-extend-native": "^0.3.12"
   },

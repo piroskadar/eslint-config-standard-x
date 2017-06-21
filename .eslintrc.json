@@ -42,6 +42,7 @@
     "jsdoc/check-types": "warn",
     "jsdoc/newline-after-description": "warn",
     "jsdoc/require-description-complete-sentence": "warn",
+    "jsdoc/require-example": "warn",
     "jsdoc/require-hyphen-before-param-description": "warn",
     "jsdoc/require-param": "warn",
     "jsdoc/require-param-description": "warn",

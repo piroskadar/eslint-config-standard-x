@@ -78,3 +78,8 @@ build/Release
 
 # OSX
 .DS_Store
+
+# Only apps should have lockfiles
+yarn.lock
+package-lock.json
+npm-shrinkwrap.json
