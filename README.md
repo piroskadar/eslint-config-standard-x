@@ -1,6 +1,8 @@
 <a name="eslint-config-standard-x"></a>
 
 ## eslint-config-standard-x
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Xotic750/eslint-config-standard-x.svg)](https://greenkeeper.io/)
 <a href="https://travis-ci.org/Xotic750/eslint-config-standard-x"
 title="Travis status">
 <img
