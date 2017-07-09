@@ -22,6 +22,8 @@
 
   "rules": {
     "getter-return": "error",
+    "dot-notation": [2, { "allowKeywords": false }],
+
   	"no-compare-neg-zero": "error",
   	"nonblock-statement-body-position": "error",
     "indent": ["error", 2],
