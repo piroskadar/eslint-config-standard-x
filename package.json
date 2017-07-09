@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-standard-x",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "My shareable eslint config for standard modules.",
   "homepage": "https://github.com/Xotic750/eslint-config-standard-x",
   "author": {
@@ -59,7 +59,7 @@
     "eslint-plugin-no-use-extend-native": "^0.3.12"
   },
   "engines": {
-    "node": ">=4.3.0 <5.0.0 || >=6.0.0 <7.0.0 || >= 8.0.0",
+    "node": ">=4.3.0",
     "npm": ">=3.10.10",
     "yarn": ">=0.24.5"
   },
