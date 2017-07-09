@@ -21,8 +21,9 @@
 	},
 
   "rules": {
-    "getter-return": "error",
-    "dot-notation": [2, { "allowKeywords": false }],
+    "getter-return": ["error", { "allowImplicit": true }],
+    "dot-notation": ["error", { "allowKeywords": false, "allowPattern": "throws"  }],
+    "multiline-ternary": ["off", "always-multiline"],
 
   	"no-compare-neg-zero": "error",
   	"nonblock-statement-body-position": "error",
