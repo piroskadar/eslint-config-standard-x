@@ -21,6 +21,7 @@
 	},
 
   "rules": {
+    "getter-return": "error",
   	"no-compare-neg-zero": "error",
   	"nonblock-statement-body-position": "error",
     "indent": ["error", 2],
