@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-standard-x",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "My shareable eslint config for standard modules.",
   "homepage": "https://github.com/Xotic750/eslint-config-standard-x",
   "author": {
@@ -33,7 +33,7 @@
     "standard"
   ],
   "dependencies": {
-    "@ljharb/eslint-config": "^12.0.0"
+    "@ljharb/eslint-config": "^12.1.0"
   },
   "devDependencies": {
     "eslint": "^4.2.0",
@@ -59,7 +59,9 @@
     "eslint-plugin-no-use-extend-native": "^0.3.12"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">=4.3.0 <5.0.0 || >=6.0.0 <7.0.0 || >= 8.0.0",
+    "npm": ">=3.10.10",
+    "yarn": ">=0.24.5"
   },
   "publishConfig": {
     "access": "public"

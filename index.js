@@ -3,4 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 
-module.exports = JSON.parse(fs.readFileSync(path.join(__dirname, '.eslintrc.json')));
+var configPath = path.join(__dirname, '.eslintrc.json');
+var configContent = fs.readFileSync(configPath);
+
+module.exports = JSON.parse(configContent);
