@@ -40,6 +40,10 @@
       "skipBlankLines": true,
       "skipComments": true
     }],
+    "no-async-promise-executor": "off",
+    "no-misleading-character-class": "error",
+    "require-atomic-updates": "off",
+    "require-unicode-regexp": "off",
     "compat/compat": "error",
     "jsdoc/check-param-names": "warn",
     "jsdoc/check-tag-names": "warn",
