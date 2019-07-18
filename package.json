@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-standard-x",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "My shareable eslint config for standard modules.",
   "homepage": "https://github.com/Xotic750/eslint-config-standard-x",
   "author": {
@@ -32,6 +32,13 @@
     "eslint",
     "eslint-config",
     "standard"
+  ],
+  "files": [
+    ".eslintignore",
+    ".eslintrc.js",
+    ".prettierignore",
+    ".prettierrc.json",
+    "index.js"
   ],
   "dependencies": {
     "@ljharb/eslint-config": "^13.1.1",
