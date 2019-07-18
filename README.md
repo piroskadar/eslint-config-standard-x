@@ -1,6 +1,7 @@
 <a name="eslint-config-standard-x"></a>
 
 ## eslint-config-standard-x
+
 <a href="https://travis-ci.org/Xotic750/eslint-config-standard-x"
 title="Travis status">
 <img
@@ -26,7 +27,9 @@ alt="npm version" height="18">
 My shareable `eslint` config for standard modules.
 
 ## Usage
+
 See http://eslint.org/docs/developer-guide/shareable-configs
 
 ## Tests
+
 Simply clone the repo, `npm install`, and run `npm test`
