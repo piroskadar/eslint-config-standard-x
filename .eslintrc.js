@@ -63,7 +63,8 @@ var eslintAgreed = {
   'no-async-promise-executor': 'off',
   'no-misleading-character-class': 'error',
   'require-atomic-updates': 'off',
-  'require-unicode-regexp': 'off'
+  'require-unicode-regexp': 'off',
+  'prefer-named-capture-group': 'off'
 };
 
 /**
@@ -155,7 +156,28 @@ var importExport = {
   'import/no-useless-path-segments': 'off',
   'import/no-unresolved': 'off',
   'import/no-extraneous-dependencies': 'off',
-  'import/no-unused-modules': 'off'
+  'import/no-unused-modules': 'off',
+  'import/extensions': 'off',
+  'import/first': 'off',
+  'import/max-dependencies': 'off',
+  'import/newline-after-import': 'off',
+  'import/no-absolute-path': 'off',
+  'import/no-amd': 'off',
+  'import/no-anonymous-default-export': 'off',
+  'import/no-commonjs': 'off',
+  'import/no-deprecated': 'off',
+  'import/no-dynamic-require': 'off',
+  'import/no-internal-modules': 'off',
+  'import/no-mutable-exports': 'off',
+  'import/no-named-default': 'off',
+  'import/no-namespace': 'off',
+  'import/no-nodejs-modules': 'off',
+  'import/no-restricted-paths': 'off',
+  'import/no-unassigned-import': 'off',
+  'import/no-webpack-loader-syntax': 'off',
+  'import/order': 'off',
+  'import/prefer-default-export': 'off',
+  'import/unambiguous': 'off'
 };
 
 /**
