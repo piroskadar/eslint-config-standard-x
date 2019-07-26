@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-standard-x",
-  "version": "6.0.7",
+  "version": "6.0.8",
   "description": "My shareable eslint config for standard modules.",
   "homepage": "https://github.com/Xotic750/eslint-config-standard-x",
   "author": {
@@ -67,7 +67,7 @@
     "prettier": "^1.18.2",
     "safe-publish-latest": "^1.1.2",
     "typescript": "^3.5.3",
-    "webpack": "^4.37.0"
+    "webpack": "^4.38.0"
   },
   "peerDependencies": {
     "babel-eslint": "^10.0.2",
@@ -89,7 +89,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-switch-case": "^1.1.2",
     "prettier": "^1.18.2",
-    "webpack": "^4.37.0"
+    "webpack": "^4.38.0"
   },
   "engines": {
     "node": ">=8.11.4",
