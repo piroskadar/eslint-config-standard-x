@@ -1,6 +1,12 @@
 component_depth: 1
 languages:
   - javascript
+  production:
+    exclude:
+      - /__tests__/.*
+  test:
+    include:
+      - /__tests__/.*
 exclude:
   - /dist/.*
   - /__tests__/coverage/.*
@@ -8,9 +14,3 @@ exclude:
   - .*/webpack\.config\.js
   - .*/jest\.config\.js
   - .*/eslintrc\.js
-production:
-  exclude:
-    - /__tests__/.*
-test:
-  include:
-    - /src/.*
