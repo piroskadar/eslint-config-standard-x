@@ -181,6 +181,52 @@ var importExport = {
 };
 
 /**
+ * ESLint plugin for Jest.
+ *
+ * @see {@link https://github.com/jest-community/eslint-plugin-jest|plugin}
+ */
+var jest = {
+  'jest/prefer-inline-snapshots': 'off',
+  'jest/no-alias-methods': 'error',
+  'jest/consistent-test-it': 'error',
+  'jest/lowercase-name': 'error',
+  'jest/no-disabled-tests': 'error',
+  'jest/no-focused-tests': 'error',
+  'jest/no-hooks': 'error',
+  'jest/no-identical-title': 'error',
+  'jest/no-jasmine-globals': 'off', // off because of false positives currently
+  'jest/no-jest-import': 'error',
+  'jest/no-large-snapshots': 'error',
+  'jest/no-truthy-falsy': 'error',
+  'jest/expect-expect': 'error',
+  'jest/no-test-return-statement': 'error',
+  'jest/prefer-expect-assertions': 'error',
+  'jest/no-test-prefixes': 'error',
+  'jest/prefer-strict-equal': 'error',
+  'jest/prefer-to-be-null': 'error',
+  'jest/prefer-to-be-undefined': 'error',
+  'jest/prefer-to-contain': 'error',
+  'jest/prefer-to-have-length': 'error',
+  'jest/require-tothrow-message': 'error',
+  'jest/valid-describe': 'error',
+  'jest/valid-expect-in-promise': 'error',
+  'jest/valid-expect': 'error',
+  'jest/no-test-callback': 'error',
+  'jest/prefer-spy-on': 'off',
+  'jest/prefer-called-with': 'off',
+  'jest/prefer-todo': 'error',
+  'jest/no-empty-title': 'error',
+  'jest/no-mocks-import': 'off',
+  'jest/no-commented-out-tests': 'off',
+  'jest/no-duplicate-hooks': 'warn',
+  'jest/no-if': 'warn',
+  'jest/no-export': 'off',
+  'jest/no-try-expect': 'off',
+  'jest/no-standalone-expect': 'off',
+  'jest/no-expect-resolves': 'error'
+};
+
+/**
  * JSDoc specific linting rules for ESLint.
  *
  * @see {@link https://github.com/gajus/eslint-plugin-jsdoc|plugin}
@@ -255,11 +301,8 @@ module.exports = {
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-environments|env}
    */
   env: {
-    browser: true,
     commonjs: true,
-    es6: false,
-    jest: false,
-    node: true
+    es6: false
   },
 
   /**
@@ -270,6 +313,7 @@ module.exports = {
     'plugin:eslint-comments/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:jest/recommended',
     'plugin:prettier/recommended',
     'plugin:promise/recommended',
     'plugin:lodash/recommended',
@@ -292,7 +336,7 @@ module.exports = {
    */
   overrides: [
     {
-      files: ['webpack.*.js', '.eslintrc.js'],
+      files: ['__tests__/**/*.js', 'postcss.config.js', 'webpack.*.js', '.eslintrc.js'],
       rules: {
         'global-require': 'off',
         'import/no-extraneous-dependencies': [
@@ -302,12 +346,56 @@ module.exports = {
           }
         ],
         'no-console': 'off',
+        'no-debugger': 'off',
+        'lodash/prefer-is-nil': 'off',
+        'lodash/prefer-noop': 'off',
         'func-names': 'off',
         'no-new-func': 'off',
         'promise/avoid-new': 'off',
         'no-restricted-globals': 'off',
+        complexity: 'off',
+        'max-lines-per-function': 'off',
+        'max-params': 'off',
         'compat/compat': 'off',
-        strict: 'off'
+        'max-lines': 'off'
+      },
+      env: {
+        node: true,
+        es6: true
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          impliedStrict: true
+        },
+        ecmaVersion: 2019,
+        parser: 'babel-eslint',
+        sourceType: 'module'
+      }
+    },
+    {
+      files: ['webpack.*.js'],
+      env: {
+        browser: true,
+        shelljs: true
+      },
+      rules: {
+        strict: 'off',
+        camelcase: ['error', {properties: 'never'}],
+        'babel/camelcase': ['error', {properties: 'never'}]
+      }
+    },
+    {
+      files: ['__tests__/**/*.js'],
+      env: {
+        atomtest: true,
+        browser: true,
+        commonjs: true,
+        embertest: true,
+        jasmine: true,
+        jest: true,
+        mocha: true,
+        phantomjs: true,
+        qunit: true
       }
     }
   ],
@@ -363,6 +451,7 @@ module.exports = {
     lodash,
     prettier,
     cssModules,
+    jest,
     jsdoc
   ),
 
@@ -386,6 +475,7 @@ module.exports = {
       '.we'
     ],
     'import/resolver': {
+      node: {},
       webpack: {
         config: 'webpack.config.js'
       }
