@@ -45,9 +45,11 @@
     "eslint-config-prettier": "^6.1.0"
   },
   "devDependencies": {
+    "@types/node": "^12.7.2",
+    "@types/webpack": "^4.39.1",
+    "@xotic750/eslint-find-rules": "^4.1.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.2.2",
-    "@xotic750/eslint-find-rules": "^4.1.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-loader": "^3.0.0",
