@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/eslint-config-standard-x",
-  "version": "6.2.1",
+  "version": "6.2.2",
   "description": "My shareable eslint config for standard modules.",
   "homepage": "https://github.com/Xotic750/eslint-config-standard-x",
   "author": {
@@ -19,7 +19,7 @@
     "security-fix": "npm run security -- fix",
     "lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
     "lint-fix": "npm run lint -- --fix",
-    "prettier-check": "eslint --print-config . | eslint-config-prettier-check"
+    "prettier-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
@@ -41,11 +41,11 @@
     "index.js"
   ],
   "dependencies": {
-    "@ljharb/eslint-config": "^14.0.2",
-    "eslint-config-prettier": "^6.1.0"
+    "@ljharb/eslint-config": "^14.1.0",
+    "eslint-config-prettier": "^6.2.0"
   },
   "devDependencies": {
-    "@types/node": "^12.7.3",
+    "@types/node": "^12.7.4",
     "@types/webpack": "^4.39.1",
     "@xotic750/eslint-find-rules": "^4.2.0",
     "babel-eslint": "^10.0.3",
@@ -59,8 +59,8 @@
     "eslint-plugin-eslint-comments": "^3.1.2",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.16.0",
-    "eslint-plugin-jsdoc": "^15.8.4",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsdoc": "^15.9.1",
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-lodash": "^6.0.0",
     "eslint-plugin-no-use-extend-native": "^0.4.1",

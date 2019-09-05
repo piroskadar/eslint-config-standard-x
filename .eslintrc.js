@@ -35,15 +35,15 @@ var eslintAgreed = {
   ],
   'no-console': 'off',
   'no-debugger': 'error',
-  'comma-dangle': ['error', 'never'],
+  'comma-dangle': 'off',
   'sort-keys': 'off',
   'no-magic-numbers': 'off',
   'multiline-comment-style': ['warn', 'starred-block'],
-  'function-paren-newline': ['error', 'multiline'],
+  'function-paren-newline': 'off',
   'lines-between-class-members': 'off',
   'no-compare-neg-zero': 'error',
-  'nonblock-statement-body-position': 'error',
-  indent: ['error', 2],
+  'nonblock-statement-body-position': 'off',
+  indent: 'off',
   'global-require': 'warn',
   'max-params': ['error', 3],
   'block-scoped-var': 'warn',
@@ -102,9 +102,9 @@ var classProperty = {
   'babel/camelcase': ['error', {properties: 'never'}], // because Eketorp's property names are camel_case
   'babel/new-cap': 'error',
   'babel/no-invalid-this': 'error',
-  'babel/object-curly-spacing': 'error',
+  'babel/object-curly-spacing': 'off',
   'babel/quotes': ['error', 'single', {avoidEscape: true}],
-  'babel/semi': 'error',
+  'babel/semi': 'off',
   'babel/no-unused-expressions': 'error',
   'babel/valid-typeof': 'error'
 };
@@ -315,11 +315,11 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:jest/recommended',
-    'plugin:prettier/recommended',
     'plugin:promise/recommended',
     'plugin:lodash/recommended',
     'plugin:css-modules/recommended',
-    'plugin:switch-case/recommended'
+    'plugin:switch-case/recommended',
+    'plugin:prettier/recommended'
   ],
 
   /**
@@ -405,6 +405,11 @@ module.exports = {
   ],
 
   /**
+   * @see {@link https://github.com/babel/babel-eslint|parser}
+   */
+  parser: 'babel-eslint',
+
+  /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-parser-options|parserOptions}
    */
   parserOptions: {
@@ -412,7 +417,6 @@ module.exports = {
       impliedStrict: true
     },
     ecmaVersion: 5,
-    parser: 'babel-eslint',
     sourceType: 'script'
   },
 
