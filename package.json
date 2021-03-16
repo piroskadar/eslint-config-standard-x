@@ -86,16 +86,16 @@
     "eslint-plugin-eslint-comments": "^3",
     "eslint-plugin-html": "^6",
     "eslint-plugin-import": "^2",
-    "eslint-plugin-jest": "^22",
-    "eslint-plugin-jsdoc": "^15",
+    "eslint-plugin-jest": "^24",
+    "eslint-plugin-jsdoc": "^32",
     "eslint-plugin-json": "^1",
-    "eslint-plugin-lodash": "^5.1.1 || ^6",
+    "eslint-plugin-lodash": "7",
     "eslint-plugin-no-use-extend-native": "^0",
     "eslint-plugin-prettier": "^3",
     "eslint-plugin-promise": "^4",
     "eslint-plugin-switch-case": "^1",
-    "prettier": "^1",
-    "webpack": "^4"
+    "prettier": "^2",
+    "webpack": "^5"
   },
   "engines": {
     "node": ">=14.16.0",
