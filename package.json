@@ -1,11 +1,11 @@
 {
-  "name": "@xotic750/eslint-config-standard-x",
-  "version": "6.2.2",
-  "description": "My shareable eslint config for standard modules.",
-  "homepage": "https://github.com/Xotic750/eslint-config-standard-x",
+  "name": "@piroskadar/eslint-config-standard-x",
+  "version": "7.0.0",
+  "description": "Fork and updated version of @xotic750's shareable eslint config for standard modules.",
+  "homepage": "https://github.com/piroskadar/eslint-config-standard-x",
   "author": {
-    "name": "Graham Fairweather",
-    "email": "xotic750@gmail.com"
+    "name": "Piroska Barjak",
+    "email": "piroskadar@gmail.com"
   },
   "copyright": "Copyright (c) 2017-present",
   "license": "MIT",
@@ -23,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/xotic750/eslint-config-standard-x.git"
+    "url": "git://github.com/piroskadar/eslint-config-standard-x.git"
   },
   "bugs": {
-    "url": "https://github.com/Xotic750/eslint-config-standard-x/issues"
+    "url": "https://github.com/piroskadar/eslint-config-standard-x/issues"
   },
   "keywords": [
     "eslint",
@@ -96,8 +96,8 @@
     "webpack": "^4"
   },
   "engines": {
-    "node": ">=8.11.4",
-    "npm": "6.10.1"
+    "node": ">=14.16.0",
+    "npm": "7.6.3"
   },
   "browserslist": [
     "last 3 Chrome versions",
