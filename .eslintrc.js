@@ -372,7 +372,7 @@ module.exports = {
           impliedStrict: true
         },
         ecmaVersion: 2019,
-        parser: 'babel-eslint',
+        parser: "@babel/eslint-parser",
         sourceType: 'module'
       }
     },
