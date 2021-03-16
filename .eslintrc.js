@@ -371,8 +371,8 @@ module.exports = {
         ecmaFeatures: {
           impliedStrict: true
         },
-        ecmaVersion: 2019,
-        parser: "@babel/eslint-parser",
+        ecmaVersion: 2021,
+        parser: '@babel/eslint-parser',
         sourceType: 'module'
       }
     },
@@ -407,7 +407,7 @@ module.exports = {
   /**
    * @see {@link https://github.com/babel/babel-eslint|parser}
    */
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-parser-options|parserOptions}
